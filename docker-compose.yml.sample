@@ -1,0 +1,11 @@
+maskin-app:
+  image: registry.soloweb.pt/maskin-app:development
+  container_name: maskin-app
+  hostname: app
+  environment:
+    - VIRTUAL_HOST=maskin.soloweb.pt
+    - TERM=xterm
+    - APP_URL=https://maskin.soloweb.pt
+  expose:
+    - "80"
+  restart: always

@@ -1,0 +1,26 @@
+$text-color: #18232B;
+$accent-color: #F16B72;
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+    display: none !important;
+}
+
+@mixin gt-xs {
+    @media (min-width: 600px) {
+        @content;
+    }
+}
+
+@mixin gt-sm {
+    @media (min-width: 960px) {
+        @content;
+    }
+}
+
+a, a:visited {
+    color: $accent-color;
+}
+
+.text-center {
+    text-align: center;
+}
