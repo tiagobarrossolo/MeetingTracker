@@ -3,9 +3,7 @@
 
 BRANCH=$(git rev-parse --abbrev-ref HEAD)
 HASHED=$(git log --pretty=format:'%h' -n 1 2>&1)
-REPO=registry.soloweb.pt/maskin-app
-REMOTE_MACHINE=devsolo
-REMOTE_DIR=./orchestration/maskin/app/
+REPO=registry.soloweb.pt/meeting-tracker-app
 
 
 
