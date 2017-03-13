@@ -3,7 +3,7 @@
 
 FILE=$(find /var/www/app/scripts/app-*.js | head -1)
 
-sed -i.bak "s,https://maskin.soloweb.pt,$APP_URL,g" "$FILE"
+sed -i.bak "s,https://meeting-tracker.soloweb.pt,$APP_URL,g" "$FILE"
 
 
 nginx
