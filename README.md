@@ -3,7 +3,7 @@
 
 ### What is this repository for? ###
 
-* This is the source code of the Maskin frontend client
+* This is the source code of the Meeting Tracker frontend client
 * The code here is later optmized to be hosted as SPA
 
 
