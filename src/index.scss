@@ -24,3 +24,11 @@ a, a:visited {
 .text-center {
     text-align: center;
 }
+
+.md-button.md-fab {
+    line-height: 2.6rem;
+    min-width: 0;
+    width: 2.6rem;
+    height: 2.6rem;
+    border-radius: 50%;
+}

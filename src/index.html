@@ -21,14 +21,91 @@
 </head>
 
 
-<body ng-cloak layout="column">
+<!--<body ng-cloak layout="column">
 
 <ui-view id="viewport" flex layout="row">
     Meeting Tracker
 </ui-view>
 
 
+</body>-->
+
+<!--<body ng-app="app" layout="row" ng-cloak>
+<md-sidenav md-component-id="menu" class="md-sidenav-left">
+    <md-content>
+        <md-list>
+            <md-list-item ui-sref="meetingsList" ui-sref-active="active">
+                <span>Meetings</span>
+            </md-list-item>
+        </md-list>
+        <div class="md-toolbar-tools" layout="row" layout-align="space-around center">
+            <md-button class="md-icon-button" ui-sref="meeting">
+                <md-tooltip>New Metting</md-tooltip>
+                <md-icon></md-icon>
+            </md-button>
+        </div>
+
+    </md-content>
+</md-sidenav>
+<ui-view id="viewport" flex layout="row">qwerty</ui-view>
+</body>-->
+
+<body ng-app="app" ng-cloak>
+
+    <md-content>
+
+
+
+        <md-toolbar>
+            <div class="md-toolbar-tools">
+                <md-button ui-sref="home">Home</md-button>
+                <md-button ui-sref="meetingsList">Meetings</md-button>
+
+                <!--<md-truncate style="position: absolute; left: 90px; right: 170px; top: 13px; bottom: 13px;">Toolbar with Standard Buttons</md-truncate>-->
+
+                <!--<span flex></span>
+                <md-button class="md-raised" aria-label="Learn More">
+                    Learn More
+                </md-button>
+                <md-button class="md-fab md-mini" aria-label="Favorite">
+                    <md-icon ></md-icon>
+                </md-button>-->
+            </div>
+
+        </md-toolbar>
+
+        <div>
+            <ui-view></ui-view>
+        </div>
+    </md-content>
 </body>
+
+<!--<div ng-app="app" ng-cloak>
+    <md-content class="md-padding">
+        &lt;!&ndash;<md-nav-bar md-selected-nav-item="currentNavItem" nav-bar-aria-label="navigation links">&ndash;&gt;
+
+            &lt;!&ndash;<md-nav-item md-nav-href="home" name="home">Home</md-nav-item>
+            <md-nav-item md-nav-href="meetingsList" name="meetings">Meetings</md-nav-item>
+
+
+        </md-nav-bar>
+
+        <div class="ext-content">
+            {{currentNavItem}}
+            &lt;!&ndash;<md-button class="md-fab" aria-label="New Meeting">
+            </md-button>&ndash;&gt;
+        </div>&ndash;&gt;
+
+        <a ui-sref="home">Home</a>
+        <a ui-sref="meetingsList" ui-sref-active="active">Meetings List</a>
+
+        <ui-view></ui-view>
+
+        &lt;!&ndash;<md-checkbox ng-model="disableInkBar">Disable Ink Bar</md-checkbox>&ndash;&gt;
+
+    </md-content>
+</div>-->
+
 
 <!-- build:js({.tmp,src}) scripts/vendor.js -->
 <!-- bower:js -->

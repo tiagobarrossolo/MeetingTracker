@@ -1,0 +1,54 @@
+<div id="master">
+
+    <md-content class="make-scrollable" flex>
+        <form>
+            <div layout="row">
+
+            <md-input-container flex="30">
+                <label>Title</label>
+                <input required name="title" ng-model="meeting.title">
+
+            </md-input-container>
+
+            <!--<md-input-container flex="30">
+                <label>Description</label>
+                <input required name="description" ng-model="meeting.description">
+            </md-input-container>
+
+            <md-input-container flex="30">
+                <label>Location</label>
+                <input required name="location" ng-model="meeting.location">
+            </md-input-container>-->
+
+            <md-input-container flex="30">
+                <label>Date</label>
+                <md-datepicker ng-model="user.submissionDate"></md-datepicker>
+            </md-input-container>
+
+            <md-input-container flex="30">
+                <label>Durantion</label>
+                <input required name="durantion" type="time" ng-model="meeting.durantion">
+            </md-input-container>
+
+           <!-- Subject:
+            input-contain type="text" name="subject">
+            Day:
+            <input type="text" name="day">-->
+            </div>
+        </form>
+
+    </md-content>
+
+
+    <md-content layout="column" layout-align="end end" >
+        <md-button ng-click="addMeeting()" class="md-fab" aria-label="New Meeting">+</md-button>
+    </md-content>
+
+   <!-- <script>
+        function addMeeting() {
+            document.getElementById("master").innerHTML = "Hello World";
+        }
+    </script>-->
+</div>
+
+
